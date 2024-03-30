@@ -1,0 +1,29 @@
+<section>
+  <h2>JSON :</h2>
+  <form [formGroup]="jsonFormGroup">
+    <div class="form-group">
+      <textarea
+        class="form-control"
+        id="jsonData"
+        formControlName="jsonData"
+        rows="10"
+        (paste)="onPaste($event)"
+        (keyup)="onChange($event)"
+      ></textarea>
+      <div
+        *ngIf="
+          jsonFormGroup.get('jsonData')?.hasError('required') &&
+          (jsonFormGroup.get('jsonData')?.touched ||
+            jsonFormGroup.get('jsonData')?.dirty)
+        "
+        class="alert alert-danger mt-3"
+      >
+        JSON data is required!
+      </div>
+
+      <div *ngIf="jsonErrorMessage" class="alert alert-danger mt-3">
+        {{ jsonErrorMessage }}
+      </div>
+    </div>
+  </form>
+</section>

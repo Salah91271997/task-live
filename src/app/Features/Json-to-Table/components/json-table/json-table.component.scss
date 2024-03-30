@@ -1,0 +1,53 @@
+@import "../../../../../assets/styles/app.scss";
+
+h2 {
+  margin: 1rem 0;
+}
+label {
+  color: $label;
+  margin-bottom: 7px;
+}
+.add-btn {
+  margin-top: 1.5rem;
+}
+.button-container {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+  margin: 2.5rem 0;
+}
+.custom-pagination {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 1rem 0;
+  flex-direction: row;
+}
+
+.page-button {
+  margin: 1rem 5px;
+}
+
+.page-button {
+  button {
+    background-color: $white;
+    color: $primary;
+    border: 1px solid $primary; // Corrected typo: `sold` to `solid`
+  }
+}
+
+.page-button {
+  button.active {
+    background-color: $primary;
+    color: $white;
+    border: 1px solid $primary; // Corrected typo: `sold` to `solid`
+  }
+}
+
+.icon-button {
+  .mat-icon {
+    background-color: $white; // Background color on hover
+    color: $primary; // Icon color on hover
+    font-size: 24px;
+  }
+}

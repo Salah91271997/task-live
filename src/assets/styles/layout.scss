@@ -1,0 +1,90 @@
+@import "app.scss";
+/* Some Resets */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+a,
+a:link,
+a:hover,
+a:visited,
+a:active {
+  text-decoration: none !important;
+}
+
+ul {
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none;
+}
+// reset inputs
+
+/* HTML Styles Start Here */
+html {
+  font-size: 16px;
+  height: -webkit-fill-available;
+  @include x-small-screen {
+    font-size: 12px;
+  }
+
+  @include small-screen {
+    font-size: 13px;
+  }
+
+  @include medium-screen {
+    font-size: 14px;
+  }
+
+  @include normal-screen {
+    font-size: 15px;
+  }
+
+  @include large-screen {
+    font-size: 16px;
+  }
+
+  // @include xlarge-screen {
+  //   font-size: 16px;
+  // }
+}
+body {
+  min-width: 320px;
+  line-height: 1.5;
+  background-color: $base_background;
+  min-height: -webkit-fill-available;
+  min-height: 100vh;
+}
+.json-container {
+  max-width: 91%;
+  margin: 0 auto;
+}
+/* Scrollbar Styles Start Here */
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 2px;
+  background: $base_background;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background: $border_secondary;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba($border_secondary, 50%);
+}
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
